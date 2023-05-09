@@ -1,0 +1,23 @@
+{
+  "name": "jest-aaa",
+  "version": "1.0.0",
+  "description": "Learnin how to use Jest to test functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unorjikingsley/Jest-AAA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unorjikingsley/Jest-AAA/issues"
+  },
+  "homepage": "https://github.com/unorjikingsley/Jest-AAA#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
