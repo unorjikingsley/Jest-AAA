@@ -9,23 +9,23 @@ const { stringLength, reverseString, Calculator, Greeting, capitalize } = requir
 
 describe('stringLength', () => {
   test('returns the correct string length', () => {
-    expect(stringLength('a')).toBe(1)
-    expect(stringLength('World!7890')).toBe(10)
-    expect(stringLength('john123')).toBe(7)
+    expect(stringLength('a')).toBe(1);
+    expect(stringLength('World!7890')).toBe(10);
+    expect(stringLength('john123')).toBe(7);
   });
 
   test('throw an error for input less than one', () => {
     expect(() => {
-      stringLength('')
+      stringLength('');
     }).toThrow('Input string must be between 1 to 10 characters long');
-  })
+  });
 
   test('throw an error for input less than one', () => {
     expect(() => {
-      stringLength('jhbvkanhvgvhszmnuksydfahdbc')
-    }).toThrow('Input string must be between 1 to 10 characters long')
-  })
-})
+      stringLength('jhbvkanhvgvhszmnuksydfahdbc');
+    }).toThrow('Input string must be between 1 to 10 characters long');
+  });
+});
 
 test('Input should be reversed', () => {
   const input = 'hello';
@@ -54,7 +54,7 @@ describe('Calculator', () => {
     })
 
     it('should add two negative numbers', () => {
-      const calculator = new Calculator()
+      const calculator = new Calculator();
       expect(calculator.add(-2, -3)).toBe(-5);
     })
 
@@ -66,7 +66,7 @@ describe('Calculator', () => {
 
   describe('subtract', () => {
     it('should subtract two positive numbers', () => {
-      const calculator = new Calculator()
+      const calculator = new Calculator();
       expect(calculator.subtract(3, 2)).toBe(1)
     })
 
@@ -81,8 +81,8 @@ describe('Calculator', () => {
     })
 
     it('should subtract a number from zero', () => {
-      const calculator = new Calculator()
-      expect(calculator.subtract(0, 3)).toBe(-3)
+      const calculator = new Calculator();
+      expect(calculator.subtract(0, 3)).toBe(-3);
     })
   })
 
