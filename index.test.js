@@ -135,7 +135,7 @@ describe('capitalize', () => {
   test('Input first letter must be capitalized', () => {
     expect(capitalize('table')).toBe('Table')
     expect(capitalize('hello world')).toBe('Hello world')
-    expect(capitalize('')).toBe('')
+    // expect(capitalize('')).toBe('')
     expect(capitalize('123')).toBe('123')
   })
 
@@ -143,5 +143,9 @@ describe('capitalize', () => {
     expect(() => {
       capitalize(675)
     }).toThrow('Input must be a string')
+  })
+
+  test('Empty Input returns an empty string', () => {
+    expect(capitalize('')).toBe('');
   })
 })
